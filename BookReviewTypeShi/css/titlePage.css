@@ -1,0 +1,269 @@
+body {
+	font-family: "Montserrat", sans-serif;
+    margin:0;
+	padding:0;
+}
+
+.mainContainer {
+	display:grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: 1fr 1.8fr 1fr;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.leftContainer{
+    display:grid;
+    height:100%;
+    width: 100%;
+    grid-template-rows: auto auto auto auto auto 1fr;
+}
+
+.poster img {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
+    object-fit:cover;
+    box-shadow: #000000 2px 2px 4px;
+    
+}
+
+.leftContainer .listTitle {
+	height:35px;
+	font-size: 28px;
+	border-left: solid #A100FF 10px;
+	padding-left: 5px;
+	background-color: white;
+    margin: 20px 5%;
+    font-weight: bolder;
+}
+
+
+.favorited, .addToFavorites, .leaveReview, .genreSection {
+    border: solid 2px black;
+    text-align: center;
+    margin: 5px 5%;
+    width: 90%
+}
+
+.favorited {
+    background-color: #A100FF;
+    color: white;
+}
+
+.addToFavorites {
+    width: 91%;
+}
+
+
+.addToFavorites:hover, .leaveReview:hover {
+    color: white;
+    background-color: #A100FF;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.genreSection p {
+    margin: 0 0 5px 0;
+    border-bottom: solid black 2px;
+}
+
+.genreBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow:hidden;
+}
+
+.genres {
+    font-size: 80%;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    text-align:center;
+    justify-content: center;
+}
+
+.container{
+    display:grid;
+    height: 100%;
+    width: 100%;
+	border-left: solid 1px #ACACDE;
+    grid-template-rows: auto auto auto auto auto auto auto auto 1fr;
+    overflow-y: auto;
+}
+
+.container#middle {
+    display:grid;
+    height: 100%;
+    width: 100%;
+	border-left: solid 1px #ACACDE;
+    grid-template-rows: auto 1fr 1fr;
+    overflow-y: auto;
+}
+
+
+.container .listTitle, .container .userReviews {
+    font-size: 20px;
+    padding-left: 5px;
+	border-left: solid #A100FF 10px;
+    margin-top: 75px;
+	margin-left: 10px;
+    font-weight: bolder;
+
+}
+
+.container .sourceLabel, .userReviews, .adaptationLabel, .avgScoreLabel{
+    padding-left: 5px;
+    font-size: 20px;
+    border-left: solid #A100FF 10px;
+    font-weight: bolder;
+	margin-left: 5px;
+}
+
+.titleInfo p {
+	min-height: 120px;
+	max-height: 220px;
+	overflow: auto;
+}
+
+.container .summary p, .container .sourceInfo p, .adaptationInfo p {
+    padding: 5px;
+    background-color: #ACACDE;
+    margin-right: 2.5%;
+	font-size: 20px;
+}
+
+.container .reviewSection {
+    margin-right: 2.5%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto 1fr;
+}
+
+.reviewDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr;
+    grid-template-rows: auto auto auto;
+}
+
+.reviewDisplay .profilePicture {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.username {
+	grid-area: 1/ 2/ 2 / 6;
+	display: flex;
+    align-items: center;
+	font-size: 24px;
+	font-weight:bold;
+}
+
+.reviewDisplay img {
+    align-self:center;
+    display:block;
+    width: 80px;
+	height: 80px;
+    border-radius: 100%;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+.reviewDisplay .username, .profilePicture, .scoreLabel, .userScore {
+    background-color: #ACACDE;
+}
+
+.profilePicture {
+	border-right: 3px solid #A100FF;
+}
+.reviewDisplay .review {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ACACDE;
+    grid-area: 2 / 1 / 4 / 6;
+	height: 250px;
+	overflow: auto;
+}
+
+.genres a {
+	text-decoration: none;
+}
+
+.reviewDisplay {
+	margin-top: 15px;
+}
+
+.scoreLabel {
+	grid-area: 1 / 6 / 2 / 8;
+	border-bottom: 3px solid #A100FF;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container div {
+	padding: 0 5px;
+}
+
+.reviewDisplay .userScore {
+	grid-area: 2 / 6 / 4 / 8;
+	height: 250px;
+	font-size: 32px;
+    padding: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	font-weight: bold;
+}
+
+.avgScore {
+	background-color: #ACACDE;
+	font-size: 32px;
+    padding: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	font-weight: bold;
+    margin-right: 2.5%;
+	font-size: 20px;
+	height: 120px;
+	margin-top: 20px;
+}
+
+.profilePicture, .username {
+	border-bottom: 3px solid #A100FF;
+}
+
+.username {
+	border-right: 3px solid #A100FF;
+}
+
+.review {
+	border-right: 3px solid #A100FF;
+}
+
+.leftContainer form {
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color:white;
+}
+
+a {
+    color: black;
+}

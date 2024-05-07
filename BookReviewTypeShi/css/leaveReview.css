@@ -1,0 +1,68 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	margin:0;
+	padding:0;
+}
+
+
+.wrap{
+	background: #fff;
+	border-radius: 20px;
+	max-width: 35%;
+	padding: 20px;
+	overflow: auto;
+	margin: auto;
+	margin-top: 9%
+}
+
+.wrap .form {
+	margin-top: 30px;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid gray;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+h2{
+	text-align: center;
+	padding: 0;
+	font-size: 2em;
+	text-align: center;
+	border-style: none solid; 
+	border-color:#A100FF;
+	border-width: 10px;
+}
+
+
+input[type=submit] {
+	margin: 20px 37.5% 0 37.5%;
+	width: 25%;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	background: #A100FF;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background: black;
+}
+
+input[type=number] {
+    width:33%;
+}
+
+label {
+    border-left: solid 5px #A100FF;
+    padding-left: 5px;
+}
+
+a:visited {
+	color: black;
+}
